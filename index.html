@@ -114,12 +114,14 @@
 <body>
     <div class="container">
         <div class="heart">❤️</div>
-        <h1>¿Queres salir conmigo?</h1>
-        <p>en San Valentín</p>
-        
-        <div class="buttons">
-            <button class="btn-si" onclick="respuestaSi()">Sí</button>
-            <button class="btn-no" onclick="respuestaNo()">No</button>
+        <div id="pregunta">
+            <h1>¿Queres salir conmigo?</h1>
+            <p>en San Valentín</p>
+            
+            <div class="buttons">
+                <button class="btn-si" onclick="respuestaSi()">Sí</button>
+                <button class="btn-no" onclick="respuestaNo()">No</button>
+            </div>
         </div>
 
         <div id="respuesta" class="response"></div>
@@ -127,8 +129,9 @@
 
     <script>
         function respuestaSi() {
+            document.getElementById('pregunta').style.display = 'none';
             const respuesta = document.getElementById('respuesta');
-            respuesta.innerHTML = '<img src="cerdos.jpg" style="width: 300px; border-radius: 10px; margin-top: 20px;">';
+            respuesta.innerHTML = '<img src="cerdos.jpg" style="width: 300px; border-radius: 10px; margin-bottom: 20px;"><br><span class="success">❤️ ❤️ ❤️</span>';
             confeti();
         }
 
