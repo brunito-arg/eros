@@ -114,7 +114,7 @@
 <body>
     <div class="container">
         <div class="heart">❤️</div>
-        <h1>¿Quieres salir conmigo?</h1>
+        <h1>¿Queres salir conmigo?</h1>
         <p>en San Valentín</p>
         
         <div class="buttons">
@@ -128,17 +128,17 @@
     <script>
         function respuestaSi() {
             const respuesta = document.getElementById('respuesta');
-            respuesta.innerHTML = '<span class="success">¡Excelente! ❤️ Te amo</span>';
+            respuesta.innerHTML = '<span class="success">❤️❤️❤️</span>';
             confeti();
         }
 
         function respuestaNo() {
             const respuesta = document.getElementById('respuesta');
             const mensajes = [
-                '¡Vamos, inténtalo de nuevo! 😊',
-                'Tal vez mañana... 🤔',
-                '¿Estás seguro? 💔',
-                'Dale otra oportunidad 😄'
+                '¡RESPUESTA INCORRECTA! 😊',
+                'OTRA VEZ 🤔',
+                'UNA VEZ MAS 💔',
+                'ACEPTA CARAJO >:()'
             ];
             const mensajeAleatorio = mensajes[Math.floor(Math.random() * mensajes.length)];
             respuesta.innerHTML = '<span class="funny">' + mensajeAleatorio + '</span>';
